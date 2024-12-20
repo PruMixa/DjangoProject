@@ -1,0 +1,16 @@
+{% extends "menu.html" %}
+
+{% block pagename %}
+    <h1>Магазин</h1>
+{% endblock%}
+
+{% block menu %}
+    {{ block.super }}
+{% endblock%}
+
+{% block content %}
+    {% for shops in my_menu %}
+        <h2>{{ shops }} <button>Купить</button></h2></h2>
+    {% endfor %}
+    {{ block.super }}
+{% endblock%}
